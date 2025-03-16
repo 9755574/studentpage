@@ -1,44 +1,65 @@
+:root {
+  --primary-color: #3498db;
+  --text-color: #ffffff;
+  --bg-color: #0a0e17;
+  --border-color: #3a4051;
+}
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    border-bottom: 1px solid var(--border-color);
-  }
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 120px; /* Adjust the size of your logo */
-    height: auto;
-  }
-  
-  .main-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px; /* Add spacing between nav items */
-  }
-  
-  .main-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  /* Responsive Design for Header */
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-  
-    .main-nav ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin: 0 15px;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logout-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Logo SVG styling */
+.logo text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.logo circle {
+  fill: white;
+}
+
+.logo path {
+  stroke: white;
+  stroke-width: 3;
+  fill: none;
+}
