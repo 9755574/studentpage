@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 120px; /* Adjust the size of your logo */
+    height: auto;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Add spacing between nav items */
+  }
+  
+  .main-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Responsive Design for Header */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

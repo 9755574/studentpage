@@ -1,0 +1,63 @@
+.course-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .course-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .course-details {
+    margin-bottom: 15px;
+    flex-grow: 1;
+  }
+  
+  .instructor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .instructor-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .schedule {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .schedule-days {
+    margin-right: 10px;
+  }
+  
+  .duration {
+    display: flex;
+    align-items: center;
+  }
+  
+  .enroll-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+    font-weight: 500;
+  }
+  
+  .enroll-btn.pending {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: not-allowed;
+  }

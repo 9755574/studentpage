@@ -1,0 +1,33 @@
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+  }
+  
+  .category-tab {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .category-tab:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive Design for Category Tabs */
+  @media (max-width: 768px) {
+    .category-tabs {
+      justify-content: flex-start;
+    }
+  
+    .category-tab {
+      flex: 1 1 45%; /* Allow two tabs per row on smaller screens */
+      text-align: center;
+    }
+  }
